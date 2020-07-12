@@ -1,0 +1,40 @@
+    /*--------------FONT-------------*/
+    
+    html,
+    body {
+        font-family: 'Roboto', 'Noto', sans-serif;
+    }
+    /*--------------NAV-------------*/
+    
+    nav {
+        background-color: black;
+    }
+    
+    #youtube-logo {
+        height: 50px;
+        margin: auto;
+        padding-top: 5px;
+    }
+    
+    .icon {
+        color: white;
+        font-size: 21px;
+    }
+    
+    #site-search {
+        line-height: 24px;
+        max-width: 100%;
+        background-color: white;
+        font-weight: 400;
+    }
+    
+    #profile {
+        height: 30px;
+        width: 30px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    
+    #nav-icons-r {
+        float: right;
+    }
