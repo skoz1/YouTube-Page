@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta http-equiv="x-ua-copatible" content="ie=edge">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
@@ -10,21 +10,45 @@
 </head>
 
 <body>
-    <nav>
+    <header>
 
-        <ion-icon class="icon" name="menu"></ion-icon>
-        <img id="youtube-logo" src="Images/Youtube-logo.jpg" alt="youtube logo red" name="logo">
+        <nav id="nav-bar">
+            <div id="start">
+                <a href="#">
+                    <ion-icon class="icon" name="menu"></ion-icon>
+                </a>
+                <img id="logo" src="Images/Youtube-logo.jpg" alt="youtube logo red">
+            </div>
 
-        <input type="search" id="site-search" name="search" label="Search through site content" placeholder="Search">
+            <div id="center">
+                <input type="search" id="site-search" name="search" label="Search through site content" placeholder="Search">
+                <button>
+                    <ion-icon class="icon" id="search-icon" name="search"></ion-icon>
+                </button>
+            </div>
 
-        <div id="nav-icons-r">
-            <ion-icon class="icon" id="search-icon" name="search"></ion-icon>
-            <ion-icon class="icon" name="videocam"></ion-icon>
-            <ion-icon class="icon" name="apps-sharp"></ion-icon>
-            <ion-icon class="icon" name="notifications"></ion-icon>
-            <img src="Images/Profile-img.jpeg" id="profile" alt="Profile image" name="profile-image">
-        </div>
-    </nav>
+            <div id="end">
+                <a href="#">
+                    <ion-icon class="icon" name="videocam"></ion-icon>
+                </a>
+
+                <a href="#">
+                    <ion-icon class="icon" name="apps-sharp"></ion-icon>
+                </a>
+
+                <a href="#">
+                    <ion-icon class="icon" name="notifications"></ion-icon>
+                </a>
+
+
+                <a href="#">
+                    <img src="Images/Profile-img.jpeg" id="profile" alt="Profile image" name="profile-image">
+                </a>
+
+            </div>
+
+        </nav>
+    </header>
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 </body>
 

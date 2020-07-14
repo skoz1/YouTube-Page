@@ -1,40 +1,44 @@
-    /*--------------FONT-------------*/
-    
-    html,
-    body {
-        font-family: 'Roboto', 'Noto', sans-serif;
-    }
-    /*--------------NAV-------------*/
-    
-    nav {
-        background-color: black;
-    }
-    
-    #youtube-logo {
-        height: 50px;
-        margin: auto;
-        padding-top: 5px;
-    }
-    
-    .icon {
-        color: white;
-        font-size: 21px;
-    }
-    
-    #site-search {
-        line-height: 24px;
-        max-width: 100%;
-        background-color: white;
-        font-weight: 400;
-    }
-    
-    #profile {
-        height: 30px;
-        width: 30px;
-        object-fit: cover;
-        border-radius: 50%;
-    }
-    
-    #nav-icons-r {
-        float: right;
-    }
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto:wght@300;400&display=swap');
+        /*--------------FONT-------------*/
+        
+        html,
+        body {
+            font-family: 'Roboto', 'Noto Sans', sans-serif;
+        }
+        /*--------------NAV-------------*/
+        
+        #nav-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+        }
+        
+        #start {}
+        
+        #logo {
+            height: 50px;
+            cursor: pointer;
+        }
+        
+        #profile {
+            object-fit: cover;
+            height: 35px;
+            width: 35px;
+            border-radius: 50%;
+        }
+        
+        .nav-links {
+            list-style: none;
+        }
+        
+        .nav-links li {
+            display: inline-block;
+        }
+        
+        .icon {
+            color: white;
+            font-size: 20px;
+        }
+        
+        #site-search {}
