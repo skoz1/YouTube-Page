@@ -21,6 +21,11 @@
             cursor: pointer;
         }
         
+        #site-search {
+            max-width: 100%;
+            width: 100%;
+        }
+        
         #profile {
             object-fit: cover;
             height: 35px;
@@ -28,17 +33,7 @@
             border-radius: 50%;
         }
         
-        .nav-links {
-            list-style: none;
-        }
-        
-        .nav-links li {
-            display: inline-block;
-        }
-        
         .icon {
             color: white;
             font-size: 20px;
         }
-        
-        #site-search {}
