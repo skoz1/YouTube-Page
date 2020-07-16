@@ -91,12 +91,7 @@
             margin: 20px 150px;
             padding: 0 100px 0 0;
         }
-        /*--------------GRID-LEFT-------------*/
-        
-        #left {
-            border-bottom: 1px solid rgb(207, 203, 203);
-            padding-bottom: 20px;
-        }
+        /*--------------GRID-LEFT-TITLE-------------*/
         
         #username {
             color: rgb(38, 95, 200);
@@ -133,6 +128,11 @@
             font-weight: 500;
         }
         
+        #border {
+            border-bottom: 1px solid rgb(223, 216, 216);
+            padding-bottom: 20px;
+        }
+        
         #thumb-border {
             position: relative;
             top: 20px;
@@ -140,3 +140,4 @@
             border-bottom: 2px solid grey;
             width: 145px;
         }
+        /*--------------GRID-LEFT-INFO-------------*/
