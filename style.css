@@ -148,6 +148,15 @@
             padding: 20px 0;
         }
         
+        #subscribe-btn {
+            float: right;
+            background-color: red;
+            padding: 10px 15px;
+            width: 20%;
+            border-radius: 0;
+            color: white;
+        }
+        
         .indent-sect {
             padding: 5px 15px;
         }
