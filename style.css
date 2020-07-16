@@ -117,9 +117,10 @@
             justify-content: space-between;
         }
         
-        .h2-font {
+        .grey-font {
             font-size: 15px;
             padding-right: 10px;
+            color: rgb(87, 87, 94);
         }
         
         .link-icons {
@@ -133,7 +134,7 @@
             padding-bottom: 20px;
         }
         
-        #thumb-border {
+        #thick-border {
             position: relative;
             top: 20px;
             left: 280px;
@@ -141,3 +142,27 @@
             width: 145px;
         }
         /*--------------GRID-LEFT-INFO-------------*/
+        
+        #info-sect {
+            display: flex;
+            padding: 20px 0;
+        }
+        
+        .indent-sect {
+            padding: 5px 15px;
+        }
+        
+        #subscribe-padding {
+            padding: 0 0 15px 0;
+            font-size: 14px;
+        }
+        
+        .para {
+            font-size: 14px;
+            line-height: 23px;
+            padding: 10px 0;
+        }
+        
+        #show-margin {
+            margin: 0 0-20px 0;
+        }
