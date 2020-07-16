@@ -93,7 +93,7 @@
             }
             /*--------------GRID-LEFT-TITLE-------------*/
             
-            #username {
+            .username {
                 color: rgb(38, 95, 200);
                 font-size: 13px;
                 padding: 5px 0;
@@ -170,10 +170,13 @@
                 font-size: 14px;
                 line-height: 23px;
                 padding: 10px 0;
+                height: 100px;
+                width: 100%;
+                overflow: hidden;
             }
             
             #show-margin {
-                margin: 0 0-20px 0;
+                margin: 0 0 -20px 0;
             }
             /*--------------COMMENTS-SECT-------------*/
             
@@ -202,8 +205,20 @@
                 margin: 0 10px;
                 padding: 10px 0;
                 max-width: 100%;
-                width: 90%;
+                width: 92%;
                 border: none;
                 border-bottom: 1px solid rgb(223, 216, 216);
                 outline-width: 0;
+            }
+            
+            #comments {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            
+            .indent-sect-2 {
+                position: relative;
+                bottom: 50px;
+                margin: 0 50px;
+                padding: 0 15px;
             }
