@@ -1,86 +1,142 @@
-            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto:wght@300;400&display=swap');
-            /*--------------FONT-------------*/
-            
-            html,
-            body {
-                font-family: 'Roboto', 'Noto Sans', sans-serif;
-            }
-            /*--------------NAVIGATION-------------*/
-            
-            #nav-bar {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: center;
-                position: fixed;
-                background-color: black;
-                z-index: 999;
-                width: 100%;
-            }
-            
-            #menu {
-                padding: 15px;
-            }
-            
-            #logo {
-                height: 50px;
-                cursor: pointer;
-            }
-            
-            #site-search {
-                max-width: 100%;
-                width: 500px;
-                line-height: 24px;
-                height: 30px;
-                outline: none;
-                padding: 10px;
-                font-size: 15px;
-                border-radius: 3px;
-                border: 1px solid grey;
-                background-color: rgb(46, 45, 45);
-                margin: 6px;
-            }
-            
-            button {
-                position: relative;
-                top: 3px;
-                right: 12px;
-                width: 70px;
-                padding: 4px;
-                border: none;
-                border-radius: 3px;
-                background-color: grey;
-                cursor: pointer;
-            }
-            
-            .icon {
-                color: white;
-                font-size: 20px;
-            }
-            
-            #search-icon {
-                color: rgb(70, 61, 61);
-            }
-            
-            #search-icon:hover {
-                color: white;
-            }
-            
-            #profile {
-                object-fit: cover;
-                height: 35px;
-                width: 35px;
-                border-radius: 50%;
-            }
-            
-            .end-links {
-                padding: 12px 10px 15px 20px;
-                display: inline-block;
-            }
-            /*--------------VIDEO-------------*/
-            
-            #emb-vid {
-                height: 100vh;
-                width: 100vw;
-            }
-            /*--------------GRID-------------*/
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+        /*--------------FONT-------------*/
+        
+        html,
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        /*--------------NAVIGATION-------------*/
+        
+        #nav-bar {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            background-color: black;
+            z-index: 999;
+            width: 100%;
+        }
+        
+        #menu {
+            padding: 15px;
+        }
+        
+        #logo {
+            height: 50px;
+            cursor: pointer;
+        }
+        
+        #site-search {
+            max-width: 100%;
+            width: 500px;
+            line-height: 24px;
+            height: 30px;
+            outline: none;
+            padding: 10px;
+            font-size: 15px;
+            border-radius: 3px;
+            border: 1px solid grey;
+            background-color: rgb(46, 45, 45);
+            margin: 6px;
+        }
+        
+        button {
+            position: relative;
+            top: 3px;
+            right: 12px;
+            width: 70px;
+            padding: 4px;
+            border: none;
+            border-radius: 3px;
+            background-color: grey;
+            cursor: pointer;
+        }
+        
+        .icon {
+            color: white;
+            font-size: 20px;
+        }
+        
+        #search-icon {
+            color: rgb(70, 61, 61);
+        }
+        
+        #search-icon:hover {
+            color: white;
+        }
+        
+        #profile {
+            object-fit: cover;
+            height: 35px;
+            width: 35px;
+            border-radius: 50%;
+        }
+        
+        .end-links {
+            padding: 12px 10px 15px 20px;
+            display: inline-block;
+        }
+        /*--------------VIDEO-------------*/
+        
+        #emb-vid {
+            height: 100vh;
+            width: 100vw;
+        }
+        /*--------------GRID-------------*/
+        
+        #grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            margin: 20px 150px;
+            padding: 0 100px 0 0;
+        }
+        /*--------------GRID-LEFT-------------*/
+        
+        #left {
+            border-bottom: 1px solid rgb(207, 203, 203);
+            padding-bottom: 20px;
+        }
+        
+        #username {
+            color: rgb(38, 95, 200);
+            font-size: 13px;
+            padding: 5px 0;
+        }
+        
+        ion-icon {
+            cursor: pointer;
+            padding-right: 5px;
+        }
+        
+        .h1-font {
+            font-size: 18px;
+            overflow-wrap: break-word;
+            padding-bottom: 15px;
+            line-height: 25px;
+        }
+        
+        #link-line {
+            display: flex;
+            color: rgb(87, 87, 94);
+            justify-content: space-between;
+        }
+        
+        .h2-font {
+            font-size: 15px;
+            padding-right: 10px;
+        }
+        
+        .link-icons {
+            padding-right: 10px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        
+        #thumb-border {
+            position: relative;
+            top: 20px;
+            left: 280px;
+            border-bottom: 2px solid grey;
+            width: 145px;
+        }
