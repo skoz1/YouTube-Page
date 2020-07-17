@@ -320,6 +320,7 @@
                     #grid-title {
                         display: flex;
                         justify-content: space-between;
+                        padding: 10px;
                     }
                     
                     #end {
@@ -327,65 +328,84 @@
                     }
                     /*---------slider-----------*/
                     
-                    .switch {
+                    .onoffswitch {
                         position: relative;
-                        display: inline-block;
-                        width: 60px;
-                        height: 34px;
+                        width: 40px;
+                        -webkit-user-select: none;
+                        -moz-user-select: none;
+                        -ms-user-select: none;
                     }
-                    /* Hide default HTML checkbox */
                     
-                    .switch input {
+                    .onoffswitch-checkbox {
+                        position: absolute;
                         opacity: 0;
-                        width: 0;
-                        height: 0;
+                        pointer-events: none;
                     }
-                    /* The slider */
                     
-                    .slider {
-                        position: absolute;
+                    .onoffswitch-label {
+                        display: block;
+                        overflow: hidden;
                         cursor: pointer;
-                        top: 0;
-                        left: 0;
-                        right: 0;
-                        bottom: 0;
-                        background-color: #ccc;
-                        -webkit-transition: .4s;
-                        transition: .4s;
+                        border: 2px solid #EBEBEB;
+                        border-radius: 15px;
                     }
                     
-                    .slider:before {
+                    .onoffswitch-inner {
+                        display: block;
+                        width: 200%;
+                        margin-left: -100%;
+                        transition: margin 0.3s ease-in 0s;
+                    }
+                    
+                    .onoffswitch-inner:before,
+                    .onoffswitch-inner:after {
+                        display: block;
+                        float: left;
+                        width: 50%;
+                        height: 12px;
+                        padding: 0;
+                        line-height: 12px;
+                        font-size: 0px;
+                        color: white;
+                        box-sizing: border-box;
+                    }
+                    
+                    .onoffswitch-inner:before {
+                        content: "off";
+                        padding-left: 0px;
+                        background-color: #EBEBEB;
+                        color: #FFFFFF;
+                    }
+                    
+                    .onoffswitch-inner:after {
+                        content: "OFF";
+                        padding-right: 0px;
+                        background-color: #EBEBEB;
+                        color: #FFFFFF;
+                        text-align: right;
+                    }
+                    
+                    .onoffswitch-switch {
+                        display: block;
+                        width: 19px;
+                        margin: -3.5px;
+                        background: #A1A1A1;
                         position: absolute;
-                        content: "";
-                        height: 26px;
-                        width: 26px;
-                        left: 4px;
-                        bottom: 4px;
-                        background-color: white;
-                        -webkit-transition: .4s;
-                        transition: .4s;
+                        top: 0;
+                        bottom: 0;
+                        right: 24px;
+                        border: 2px solid #EBEBEB;
+                        border-radius: 15px;
+                        transition: all 0.3s ease-in 0s;
+                        box-shadow: 0 0 9px .2px rgb(216, 216, 216);
                     }
                     
-                    input:checked+.slider {
-                        background-color: #2196F3;
+                    .onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-inner {
+                        margin-left: 0;
                     }
                     
-                    input:focus+.slider {
-                        box-shadow: 0 0 1px #2196F3;
-                    }
-                    
-                    input:checked+.slider:before {
-                        -webkit-transform: translateX(26px);
-                        -ms-transform: translateX(26px);
-                        transform: translateX(26px);
-                    }
-                    /* Rounded sliders */
-                    
-                    .slider.round {
-                        border-radius: 34px;
-                    }
-                    
-                    .slider.round:before {
-                        border-radius: 50%;
+                    .onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-switch {
+                        right: 0px;
+                        background-color: #1D72F0;
                     }
                     /*--------------GRID-RIGHT-VIDS-------------*/
