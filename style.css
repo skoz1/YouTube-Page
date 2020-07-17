@@ -1,293 +1,317 @@
-                @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
-                /*--------------FONT-------------*/
-                
-                html,
-                body {
-                    font-family: 'Roboto', sans-serif;
-                }
-                /*--------------NAVIGATION-------------*/
-                
-                #nav-bar {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                    align-items: center;
-                    position: fixed;
-                    background-color: black;
-                    z-index: 999;
-                    width: 100%;
-                }
-                
-                #menu {
-                    padding: 15px;
-                }
-                
-                #logo {
-                    height: 50px;
-                    cursor: pointer;
-                }
-                
-                #site-search {
-                    max-width: 100%;
-                    width: 500px;
-                    line-height: 24px;
-                    height: 30px;
-                    outline: none;
-                    padding: 10px;
-                    font-size: 15px;
-                    border-radius: 3px;
-                    border: 1px solid grey;
-                    background-color: rgb(46, 45, 45);
-                    margin: 6px;
-                }
-                
-                button {
-                    position: relative;
-                    top: 3px;
-                    right: 12px;
-                    width: 70px;
-                    padding: 4px;
-                    border: none;
-                    border-radius: 3px;
-                    background-color: grey;
-                    cursor: pointer;
-                }
-                
-                .icon {
-                    color: white;
-                    font-size: 20px;
-                }
-                
-                #search-icon {
-                    color: rgb(70, 61, 61);
-                }
-                
-                #search-icon:hover {
-                    color: white;
-                }
-                
-                #profile {
-                    object-fit: cover;
-                    height: 35px;
-                    width: 35px;
-                    border-radius: 50%;
-                }
-                
-                .end-links {
-                    padding: 12px 10px 15px 20px;
-                    display: inline-block;
-                }
-                /*--------------VIDEO-------------*/
-                
-                #emb-vid {
-                    height: 100vh;
-                    width: 100vw;
-                }
-                /*--------------GRID-------------*/
-                
-                #grid {
-                    display: grid;
-                    grid-template-columns: 2fr 1fr;
-                    margin: 20px 150px;
-                }
-                /*--------------GRID-LEFT-TITLE-------------*/
-                
-                .username {
-                    color: rgb(38, 95, 200);
-                    font-size: 13px;
-                    padding: 5px 0;
-                    cursor: pointer;
-                }
-                
-                a {
-                    text-decoration: none;
-                    color: rgb(38, 95, 200);
-                }
-                
-                ion-icon {
-                    cursor: pointer;
-                    padding-right: 5px;
-                }
-                
-                .h1-font {
-                    font-size: 18px;
-                    overflow-wrap: break-word;
-                    padding-bottom: 15px;
-                    line-height: 25px;
-                }
-                
-                #link-line {
-                    display: flex;
-                    color: rgb(87, 87, 94);
-                    justify-content: space-between;
-                }
-                
-                .grey-font {
-                    font-size: 15px;
-                    padding-right: 10px;
-                    color: rgb(87, 87, 94);
-                }
-                
-                .link-icons {
-                    padding-right: 10px;
-                    padding-left: 10px;
-                    font-size: 15px;
-                    font-weight: 500;
-                }
-                
-                .link-icons:hover {
-                    color: black;
-                }
-                
-                #border {
-                    border-bottom: 1px solid rgb(223, 216, 216);
-                    padding-bottom: 20px;
-                }
-                
-                #thick-border {
-                    position: relative;
-                    top: 20px;
-                    left: 280px;
-                    border-bottom: 2px solid grey;
-                    width: 145px;
-                }
-                /*--------------GRID-LEFT-INFO-------------*/
-                
-                #info-sect {
-                    display: flex;
-                    padding: 20px 0;
-                }
-                
-                #subscribe-btn {
-                    float: right;
-                    background-color: red;
-                    padding: 10px 15px;
-                    width: 20%;
-                    border-radius: 0;
-                    color: white;
-                }
-                
-                .indent-sect {
-                    padding: 5px 15px;
-                }
-                
-                #subscribe-padding {
-                    padding: 0 0 15px 0;
-                    font-size: 14px;
-                }
-                
-                .para {
-                    font-size: 14px;
-                    line-height: 23px;
-                    padding: 10px 0;
-                    height: 100px;
-                    width: 100%;
-                    overflow: hidden;
-                }
-                
-                #show-margin {
-                    margin: 0 0 -20px 0;
-                }
-                /*--------------COMMENTS-SECT-------------*/
-                
-                .sort-comment {
-                    display: flex;
-                    padding: 30px 0;
-                }
-                
-                .space-btw {
-                    padding: 0 25px;
-                }
-                
-                .profile-comment-sect {
-                    object-fit: cover;
-                    height: 45px;
-                    width: 45px;
-                    border-radius: 50%;
-                }
-                
-                .input-comment {
-                    font-family: 'robot', sans-serif;
-                    font-size: 14px;
-                    position: relative;
-                    bottom: 45px;
-                    left: 50px;
-                    margin: 0 10px;
-                    padding: 10px 0;
-                    max-width: 100%;
-                    width: 92%;
-                    border: none;
-                    border-bottom: 1px solid rgb(223, 216, 216);
-                    outline-width: 0;
-                }
-                
-                .comments {
-                    display: flex;
-                    flex-wrap: wrap;
-                    margin-top: -10px;
-                }
-                
-                .indent-sect-2 {
-                    position: relative;
-                    bottom: 50px;
-                    margin: 0 50px;
-                    padding: 0 15px;
-                }
-                
-                .user {
-                    display: flex;
-                    padding: 5px 5px;
-                }
-                
-                .user-btn {
-                    text-decoration: none;
-                    background-color: rgb(128, 128, 142);
-                    color: white;
-                    padding: 5px 5px;
-                    border-radius: 10px;
-                    font-size: 12px;
-                    font-weight: 500;
-                }
-                
-                .months {
-                    text-decoration: none;
-                    margin: 3px;
-                }
-                
-                .black {
-                    font-size: 13px;
-                    margin: 0 5px 0 -7px;
-                }
-                
-                .black:hover {
-                    color: black;
-                }
-                
-                .margin {
-                    margin: 10px 0;
-                    cursor: pointer;
-                }
-                
-                .comment-line {
-                    display: flex;
-                    align-items: center;
-                    color: grey;
-                    padding: 5px 0;
-                }
-                
-                .arrow-space {
-                    padding: 0 15px 0 0;
-                }
-                
-                .profile-pic {
-                    border-radius: 50%;
-                }
-                
-                .bold {
-                    color: black;
-                    font-weight: bold;
-                }
-                
-                .space {
-                    padding: 0 10px;
-                }
+                    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+                    /*--------------FONT-------------*/
+                    
+                    html,
+                    body {
+                        font-family: 'Roboto', sans-serif;
+                    }
+                    /*--------------NAVIGATION-------------*/
+                    
+                    #nav-bar {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        position: fixed;
+                        background-color: black;
+                        z-index: 999;
+                        width: 100%;
+                    }
+                    
+                    #menu {
+                        padding: 15px;
+                    }
+                    
+                    #logo {
+                        height: 50px;
+                        cursor: pointer;
+                    }
+                    
+                    #site-search {
+                        max-width: 100%;
+                        width: 500px;
+                        line-height: 24px;
+                        height: 30px;
+                        outline: none;
+                        padding: 10px;
+                        font-size: 15px;
+                        border-radius: 3px;
+                        border: 1px solid grey;
+                        background-color: rgb(46, 45, 45);
+                        margin: 6px;
+                    }
+                    
+                    button {
+                        position: relative;
+                        top: 3px;
+                        right: 12px;
+                        width: 70px;
+                        padding: 4px;
+                        border: none;
+                        border-radius: 3px;
+                        background-color: grey;
+                        cursor: pointer;
+                    }
+                    
+                    .icon {
+                        color: white;
+                        font-size: 20px;
+                    }
+                    
+                    #search-icon {
+                        color: rgb(70, 61, 61);
+                    }
+                    
+                    #search-icon:hover {
+                        color: white;
+                    }
+                    
+                    #profile {
+                        object-fit: cover;
+                        height: 35px;
+                        width: 35px;
+                        border-radius: 50%;
+                    }
+                    
+                    .end-links {
+                        padding: 12px 10px 15px 20px;
+                        display: inline-block;
+                    }
+                    /*--------------VIDEO-------------*/
+                    
+                    #emb-vid {
+                        height: 100vh;
+                        width: 100vw;
+                    }
+                    /*--------------GRID-------------*/
+                    
+                    #grid {
+                        display: grid;
+                        grid-template-columns: 2fr 1fr;
+                        margin: 20px 150px;
+                    }
+                    /*--------------GRID-LEFT-TITLE-------------*/
+                    
+                    .username {
+                        color: rgb(38, 95, 200);
+                        font-size: 13px;
+                        padding: 5px 0;
+                        cursor: pointer;
+                    }
+                    
+                    .username-2 {
+                        color: rgb(38, 95, 200);
+                        font-size: 13px;
+                        padding: 5px 0;
+                        cursor: pointer;
+                        position: relative;
+                        bottom: 70px;
+                    }
+                    
+                    a {
+                        text-decoration: none;
+                        color: rgb(38, 95, 200);
+                    }
+                    
+                    ion-icon {
+                        cursor: pointer;
+                        padding-right: 5px;
+                    }
+                    
+                    .h1-font {
+                        font-size: 18px;
+                        overflow-wrap: break-word;
+                        padding-bottom: 15px;
+                        line-height: 25px;
+                    }
+                    
+                    #link-line {
+                        display: flex;
+                        color: rgb(87, 87, 94);
+                        justify-content: space-between;
+                    }
+                    
+                    .grey-font {
+                        font-size: 15px;
+                        padding-right: 10px;
+                        color: rgb(87, 87, 94);
+                    }
+                    
+                    .link-icons {
+                        padding-right: 10px;
+                        padding-left: 10px;
+                        font-size: 15px;
+                        font-weight: 500;
+                    }
+                    
+                    .link-icons:hover {
+                        color: black;
+                    }
+                    
+                    #border {
+                        border-bottom: 1px solid rgb(223, 216, 216);
+                        padding-bottom: 20px;
+                    }
+                    
+                    #thick-border {
+                        position: relative;
+                        top: 20px;
+                        left: 280px;
+                        border-bottom: 2px solid grey;
+                        width: 145px;
+                    }
+                    /*--------------GRID-LEFT-INFO-------------*/
+                    
+                    #info-sect {
+                        display: flex;
+                        padding: 20px 0;
+                    }
+                    
+                    #subscribe-btn {
+                        float: right;
+                        background-color: red;
+                        padding: 10px 15px;
+                        width: 20%;
+                        border-radius: 0;
+                        color: white;
+                    }
+                    
+                    .indent-sect {
+                        padding: 5px 15px;
+                    }
+                    
+                    #subscribe-padding {
+                        padding: 0 0 15px 0;
+                        font-size: 14px;
+                    }
+                    
+                    .para {
+                        font-size: 14px;
+                        line-height: 23px;
+                        padding: 10px 0;
+                        height: 100px;
+                        width: 100%;
+                        overflow: hidden;
+                    }
+                    
+                    #show-margin {
+                        margin: 0 0 -20px 0;
+                    }
+                    /*--------------COMMENTS-SECT-------------*/
+                    
+                    .sort-comment {
+                        display: flex;
+                        padding: 30px 0;
+                    }
+                    
+                    .space-btw {
+                        padding: 0 25px;
+                    }
+                    
+                    .profile-comment-sect {
+                        object-fit: cover;
+                        height: 45px;
+                        width: 45px;
+                        border-radius: 50%;
+                    }
+                    
+                    .input-comment {
+                        font-family: 'robot', sans-serif;
+                        font-size: 14px;
+                        position: relative;
+                        bottom: 45px;
+                        left: 50px;
+                        margin: 0 10px;
+                        padding: 10px 0;
+                        max-width: 100%;
+                        width: 92%;
+                        border: none;
+                        border-bottom: 1px solid rgb(223, 216, 216);
+                        outline-width: 0;
+                    }
+                    
+                    .comments {
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin-top: -10px;
+                    }
+                    
+                    .indent-sect-2 {
+                        position: relative;
+                        bottom: 50px;
+                        margin: 0 50px;
+                        padding: 0 15px;
+                    }
+                    
+                    .indent-sect-3 {
+                        position: relative;
+                        padding: 0 15px;
+                        margin: -10px 0;
+                    }
+                    
+                    .user {
+                        display: flex;
+                        padding: 5px 5px;
+                    }
+                    
+                    .user-btn {
+                        text-decoration: none;
+                        background-color: rgb(128, 128, 142);
+                        color: white;
+                        padding: 5px 5px;
+                        border-radius: 10px;
+                        font-size: 12px;
+                        font-weight: 500;
+                    }
+                    
+                    .months {
+                        text-decoration: none;
+                        margin: 3px;
+                    }
+                    
+                    .black {
+                        font-size: 13px;
+                        margin: 0 10px 0 -3px;
+                    }
+                    
+                    .black:hover {
+                        color: black;
+                    }
+                    
+                    .margin {
+                        margin: 10px 0;
+                        cursor: pointer;
+                    }
+                    
+                    .comment-line {
+                        display: flex;
+                        align-items: center;
+                        color: grey;
+                        padding: 5px 0;
+                    }
+                    
+                    .comment-line-2 {
+                        display: flex;
+                        align-items: center;
+                        position: relative;
+                        bottom: 70px;
+                        color: grey;
+                        padding: 5px 0;
+                    }
+                    
+                    .arrow-space {
+                        padding: 0 15px 0 0;
+                    }
+                    
+                    .profile-pic {
+                        border-radius: 50%;
+                    }
+                    
+                    .bold {
+                        color: black;
+                        font-weight: bold;
+                    }
+                    
+                    .space {
+                        padding: 0 10px;
+                    }
